@@ -1,0 +1,85 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
+
+main {
+  width: 960px;
+  padding: 10px 10px 40px;
+  border-radius: 5px;
+  margin: 0px auto;
+  border-bottom: 1px dotted #cdcdcd;
+}
+
+
+header {
+  text-align: center;
+}
+
+header small{
+  float: left;
+}
+
+header strong {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+header div {
+  margin-top: 10px;
+}
+
+.wages-month-details {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.basic {
+  display: grid;
+  grid-template-columns: auto 1fr 236px;
+  gap: 5px;
+}
+
+.basic > div {
+  background: #dedede;
+  padding: 5px
+}
+
+.slno {
+  grid-row-start: 1;
+  grid-row-end: 4;
+  align-content: center;
+}
+
+.pay {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 5px
+}
+
+.pay > div {
+  margin-top: 5px;
+  padding: 5px;
+  background: #dedede;
+}
+
+.net-payment {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.pay > div strong {
+  float: right;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 135px;
+  margin-top: 40px;
+}
